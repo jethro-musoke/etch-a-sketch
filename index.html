@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <script src="etch.js" defer></script>
+    <link rel="stylesheet" href="sketch.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>Etch-A-Sketch</h1>
+        <div id="buttons">
+            <button class="play-button button button1" id="draw">Draw</button>
+            <button class="play-button button button2" id="reset">Reset</button>
+            <button class="play-button button button3" id="erase">Erase</button>
+        </div>
+        <div id="slidecontainer">
+            <input type="range" min="1" max="20" value="10" class="slider" id="myRange">
+            <p>Value: <span id="selectedRange"></span></p>
+        </div>
+    </div>
+    <div id="container"></div>
+    <div id="footer"></div>
+
+</body>
+
+</html>
